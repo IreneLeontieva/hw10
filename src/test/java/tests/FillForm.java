@@ -79,8 +79,9 @@ public class FillForm extends TestBase {
     @Test
     @Tag("smoke")
     void smokeTest(){
-        step("Open yandex ", () -> {
-            open("https://yandex.ru/");
+        step("Open form ", () -> {
+            open("/automation-practice-form");
+            $(".main-header").shouldHave(text("Practice Form"));
         });
         System.out.println("Browser size is + "+ System.getProperty("size")+ "Browser is "+System.getProperty("browser"));
     }
