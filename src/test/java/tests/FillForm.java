@@ -1,5 +1,6 @@
 package tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -73,5 +74,11 @@ public class FillForm extends TestBase {
             $(".table-responsive").shouldHave(text("Moscow"));
             $(".table-responsive").shouldHave(text("NCR Delhi"));
         });
+    }
+
+    @Test
+    @Tag("smoke")
+    void smokeTest(){
+        System.out.println(System.getProperty("Only_smoke"));
     }
 }
