@@ -24,12 +24,13 @@ public class TestBase {
 
         String user = System.getProperty("user");
         String password = System.getProperty("password");
+        String remote = System.getProperty("remote");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
-        Configuration.remote = "https://"+user+":"+password+"@selenoid.autotests.cloud/wd/hub";
+        Configuration.remote = "https://"+user+":"+password+"@"+remote;
     }
 
     @AfterEach
