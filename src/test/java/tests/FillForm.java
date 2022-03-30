@@ -79,6 +79,6 @@ public class FillForm extends TestBase {
     @Test
     @Tag("smoke")
     void smokeTest(){
-        System.out.println(System.getProperty("Only_smoke"));
+        System.out.println("Browser size is + "+ System.getProperty("size")+ "Browser is "+System.getProperty("browser"));
     }
 }
