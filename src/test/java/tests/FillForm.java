@@ -79,6 +79,9 @@ public class FillForm extends TestBase {
     @Test
     @Tag("smoke")
     void smokeTest(){
+        step("Open yandex ", () -> {
+            open("https://yandex.ru/");
+        });
         System.out.println("Browser size is + "+ System.getProperty("size")+ "Browser is "+System.getProperty("browser"));
     }
 }
