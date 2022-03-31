@@ -1,0 +1,9 @@
+//5112775630:AAHh4jNS98RK-j906D57lvpDHhDlkTPW6TY
+//-726323264
+curl -X POST \
+     -H 'Content-Type: application/json' \
+     -d '{"chat_id": "-726323264", "text": "This is a test from myBot", "disable_notification": true}' \
+     https://api.telegram.org/bot5112775630:AAHh4jNS98RK-j906D57lvpDHhDlkTPW6TY/sendMessage
+
+
+     https://api.telegram.org/bot5112775630:AAHh4jNS98RK-j906D57lvpDHhDlkTPW6TY/getUpdates
